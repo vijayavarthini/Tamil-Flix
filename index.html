@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://png.pngtree.com/png-clipart/20210311/original/pngtree-vs-logo-on-colorful-scrath-png-image_5993167.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT WEB</title>
+    <style>
+ nav {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    backdrop-filter:blur(8px);
+    position:fixed;
+    top:0px;
+    z-index:100;
+
+}
+.nav_logo img{
+    height:70px;
+    width:100%;
+    padding: 5px 5px;
+}
+nav  .nav_items{
+    position: absolute;
+    right: 20px;
+}
+.nav_items a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 15px;
+    color: rgb(178, 172, 168);
+
+}
+.nav_items a:hover{
+    color: rgb(244, 160, 4);
+}
+.carousel-inner {
+  width: 80%;
+  height: 400px;
+}
+.carousel-inner{
+  margin: 10px 0px 0px 140px;
+
+}
+.carousel-control-prev-icon{
+  position: relative;
+  left: 80px;
+}
+.carousel-control-next-icon{
+  position: relative;
+  right: 80px;
+}
+<!-- h1{
+  color: aliceblue;
+  display: inline;
+  font-size: 30px;
+  
+}
+h2{
+  color: aliceblue;
+  display: inline;
+  font-size: 30px;
+}
+h3{
+  color: aliceblue;
+  display: inline;
+  font-size: 30px;
+}
+h4{
+  color: aliceblue;
+  display: inline;
+  font-size: 30px;
+  
+  
+} -->
+.frequent-image {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+.frequent-image img{
+  margin: 2px ;
+}
+.frequent-image img:hover{
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+#carouselExampleAutoplaying{
+  margin-top: 80px;
+}
+.recently img{
+    height:370px;
+    width:200px;
+    margin:3px
+}
+.recently img:hover{
+      transform: translateY(-20px);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+}
+.top img{
+  height: 370px;
+  width: 200px;
+  margin:3px;
+}
+.top img:hover{
+  transform: translateY(-20px);
+  transition: all .5s ease-in-out;
+  border-radius: 10px;
+
+}
+.fav img:hover{
+  transform: translateY(-20px);
+  transition: all .5s ease-in-out;
+  border-radius: 10px;
+
+}
+.fav img{
+  height: 370px;
+  width: 200px;
+  margin:3px;
+}
+.ab h3{
+  font-size: 30px;
+  color: orange;
+
+}
+.ab{
+  height: 100px;
+  width: 84%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.si{
+  height: 100px;
+  width: 84%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 40px;
+}
+</style>
+</head>
+<body style="background-color: rgb(17, 16, 16);">
+    <nav>
+        <div class="nav_logo">
+            <img src="tamilflix.png" alt="" height="">
+        </div>
+        <div class="nav_items">
+            <a href="carouselExampleAutoplaying">Home</a>
+            <a href="#fre">Frequently Watched</a>
+            <a href="#recent">Recent</a>
+            <a href="#top rated">Top Rated</a>
+            <a href="#favourites">Favourites</a>
+            <a href="#about">About</a>
+            <a href="#signup">Signup</a>
+        </div>
+    </nav>
+    <div id = "carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="thunivuhead.jpg"   class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pathala.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="badass.jpeg" class="d-block w-100" alt="...">
+             
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <br id="fre">
+        <br><br><br>
+    </div>
+     <!-- home section ends 
+   <-- frequent section starts -->
+   
+      <h1>Frequently Watched</h1>
+      <div class="frequent-image" id="freq">
+        <img src="leo.jpeg" alt="">
+        <img src="joe.jpeg" alt="">
+        <img src="pathuthala.jpeg" alt="">
+        <img src="charlie.jpeg" alt="">
+        <img src="dada.jpeg" alt="">
+        <img src="thunivu.jpeg" alt="">
+        <img src="good night.jpeg" alt="">
+        
+        
+      
+      </div>
+      
+      <!-- frequent section end-->
+      <!--recent section start-->
+      <br id="recent"><br><br>
+      <h2>Recent </h2>
+      <div class="frequent-image">
+       <img src="jailer.jpeg" alt="">
+      <img src="charlie.jpeg" alt="">
+      <img src="por thozhil.jpeg" alt="">
+      <img src="viduthalai.jpeg" alt="">
+      <img src="dd.jpeg" alt="">
+      <img src="mark antony.jpeg" alt="">
+      <img src="joe.jpeg" alt="">
+    </div>
+      <!--recent section end-->
+      <!--top rated section start-->
+      <br id="top rated"><br><br>
+      <h3>Top Rated</h3>
+      <div class="frequent-image">
+        <img src="maveeran.jpeg" alt="">
+        <img src="avs.jpeg" alt="">
+        <img src="kantara.jpeg" alt="" height="300px" width="250px">
+        <img src="doctor.jpeg" alt="">
+        <img src="kanguva.jpeg" alt="">
+        <img src="2018.jpeg" alt="">
+        
+        
+      </div>
+      <!--top rated section end-->
+
+      <!--favourites section start-->
+      <br id="favourites"><br><br>
+      <h4>Favourites</h4>
+      <div class="frequent-image">
+        <img src="nayagan.jpeg" alt="">
+        <img src="thalapathy.jpeg" alt="">
+        <img src="sooryavamsam.jpeg" alt="">
+        <img src="uthama villain.jpeg" alt="">
+        <img src="panch.jpeg" alt="">
+        <img src="un.jpeg" alt="">
+      
+        
+
+      </div>
+      <!--favourites section end-->
+      <!-- About starts -->
+      <br id="about"><br><br>
+      <h1>About</h1>
+      <div class="ab" id="ab">
+   <p>    <h3>Contact Details</h3>
+    <h3>Career</h3>
+    <h3>Need Help</h3>
+    <h3>Visit Help Center</h3>
+    <h3>Share Feedback</h3>
+    <h3>Language</h3></p>
+      </div>
+
+      <!--sign up session start-->
+      <br id="signup"><br><br>
+      <h1>Sign Up</h1>
+      <div class="si" id="si">
+       <a href="https://www.aha.video/app/login">click here</a><br>
+
+      <a href="https://www.instagram.com/"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt="" height="30px"></a><br>
+
+      <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png" alt="" height="30px"></a>
+      </div>
+
+</body>
+</html>
